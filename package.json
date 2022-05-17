@@ -1,0 +1,22 @@
+{
+  "name": "ohmyfoodvincent",
+  "version": "1.0.0",
+  "description": "OpenClassrooms p3 ohmyfood",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pepsizor1/ohmyfoodvincent.git"
+  },
+  "author": "Vincent Caroff",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pepsizor1/ohmyfoodvincent/issues"
+  },
+  "homepage": "https://github.com/pepsizor1/ohmyfoodvincent#readme",
+  "devDependencies": {
+    "sass": "^1.51.0"
+  }
+}
