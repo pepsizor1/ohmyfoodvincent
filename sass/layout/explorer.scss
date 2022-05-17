@@ -1,21 +1,21 @@
+
 .explore {
     text-align: center;
     background-color: #f6f6f6;
     padding-bottom: 8rem;
- h2{
+    & h2{
     padding-top: 6rem;
     font-size: 50px;
     margin: 0;
-}
-p{
-    font-size: 31px;
+    }
+    & p{
+    font-size: 28px;
     font-weight: 300;
     margin-left: 4rem;
     margin-right: 4rem;
     color:#4d4d4d;
-}
-
- button{
+    }
+    & button{
     font-family: "Roboto";
     margin-top: 3rem;
     color: white;
@@ -23,8 +23,12 @@ p{
     padding: 2.5rem 4rem;
     border: none;
     border-radius: 5rem;
-    box-shadow: 2px 1px 16px -3px black;
+    @include base-shadow;
     background-image: linear-gradient(to top,#9356DC,#FF79DA );
+        &:hover{
+            box-shadow: 0px 10px 13px -7px #252525, 0px 10px 19px 2px rgba(0,0,0,0.66);
+            background-image: linear-gradient(to top,#a67fd6,#faade4 ); 
+        }
 }
 
 }
