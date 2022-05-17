@@ -115,5 +115,11 @@ header h1 {
 .tutorial .two {
   left: -235px;
 }
+.tutorial .fa-store {
+  color: #9356dc;
+}
+.tutorial .li--blue {
+  background-color: #f5edff;
+}
 
 /*# sourceMappingURL=style.css.map */

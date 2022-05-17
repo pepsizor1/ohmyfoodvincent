@@ -30,6 +30,7 @@
         margin-left: -10rem;
         color: #7e7e7e;
         font-size: 3rem;
+        
     }
     & span{
         background-color: #9356dc;
@@ -41,7 +42,13 @@
         font-size: 2rem;
         font-weight: 400;
     }
-     .two{
+    & .two{
      left: -235px;
+    }
+    & .fa-store{
+        color: #9356dc;
+    }
+    & .li--blue{
+        background-color: #f5edff;
     }
 }
