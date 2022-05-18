@@ -24,10 +24,10 @@
     border: none;
     border-radius: 5rem;
     @include base-shadow;
-    background-image: linear-gradient(to top,#9356DC,#FF79DA );
+    background-image: linear-gradient(to top,$purple,$pink);
         &:hover{
             @include big-shadow;
-            background-image: linear-gradient(to top,#a67fd6,#faade4 ); 
+            background-image: linear-gradient(to top,$light-purple,$light-pink ); 
         }
 }
 
