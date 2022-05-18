@@ -122,4 +122,56 @@ header h1 {
   background-color: #f5edff;
 }
 
+.restaurants {
+  background-color: #f6f6f6;
+  margin-top: 8rem;
+}
+.restaurants h2 {
+  padding-top: 7rem;
+  margin-left: 2rem;
+  font-size: 2rem;
+}
+.restaurants .restaurants-cards {
+  background-color: #f6f6f6;
+  margin-top: 5rem;
+  margin: 5rem;
+  gap: 5rem;
+  display: flex;
+  flex-direction: column;
+}
+.restaurants .card {
+  box-shadow: 0px 10px 13px -7px #252525, 0px 10px 19px 2px rgba(0, 0, 0, 0.01);
+  border-radius: 0 0 2rem 2rem;
+}
+.restaurants img {
+  border-radius: 2rem 2rem 0 0;
+  width: 100%;
+  height: 23rem;
+  object-fit: cover;
+}
+.restaurants a {
+  text-decoration: none;
+  color: black;
+}
+.restaurants h3 {
+  font-size: 2.7rem;
+  margin: 2rem 0 0rem 2rem;
+  padding: 0;
+}
+.restaurants p {
+  font-size: 2rem;
+  margin: 0 0 2rem 2rem;
+  padding: 0;
+  font-family: "Roboto";
+}
+.restaurants .card__description {
+  display: flex;
+  gap: 5rem;
+  align-items: center;
+  justify-content: space-between;
+}
+.restaurants .fa-heart {
+  font-size: 4rem;
+}
+
 /*# sourceMappingURL=style.css.map */
