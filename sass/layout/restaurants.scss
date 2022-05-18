@@ -51,4 +51,58 @@
      .fa-heart{
         font-size: 4rem;
     }
+    .restaurants-cards--new{
+        position: relative;
+    }
+    .restaurants-cards--new::before{
+        content:"Nouveau";
+        border-radius: 0.5rem;
+        padding: 1rem 1rem 0rem 1rem;
+        font-size: 2rem;
+        font-weight: 500;
+        position: absolute;
+        height: 4rem;
+        width: 10rem;
+        background-color: $green;
+        color: $dark-green;
+         text-align: center;
+        right: 1.5rem;
+        top: 1rem;
+    }
+    .icons {
+		position: relative;
+		width: 1.25rem;
+		height: 2.6rem;
+     i {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+	   	
+    }
+		.icon-default {
+        transition: opacity 1s;
+        color: black;
+		}
+        
+		.icon-hover {
+        transition: opacity 1s;
+        opacity: 0;
+        color: transparent;
+        background-image: linear-gradient(to top,#9356DC,#FF79DA );
+        background-clip: text;
+        -webkit-background-clip: text;
+		}
+        &:hover {
+            
+        .icon-hover {
+               opacity: 1;
+            }
+        .icon-default {
+        opacity: 0;
+            }
+        }
+	}
+
+	
+
 }
