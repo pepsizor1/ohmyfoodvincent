@@ -1,0 +1,56 @@
+img{
+    max-width: 100%;
+    position: relative;
+    z-index: 1;
+}
+.main-menu{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 2rem 2rem 0rem 0rem;
+    background-color: $lightgrey;
+    padding-top: 0.5rem;
+    margin-top: -3rem;
+    padding-bottom: 5rem;
+    position: relative;
+    z-index: 10;
+    h2{
+        font-family: 'Shrikhand', cursive;
+        font-weight: 500;
+        margin-left: 1rem;
+    }
+    .icons {
+		position: relative;
+		width: 0.6rem;
+		height: 1.3rem;
+     i {
+		font-size: 2rem;
+        position: absolute;
+		bottom: 0;
+		right: 0;
+        margin-right: 2rem;
+	   	
+    }
+	.icon-default {
+        transition: opacity 1s;
+        color: black;
+		}
+        
+	.icon-hover {
+        transition: opacity 1s;
+        opacity: 0;
+        color: transparent;
+        background-image: linear-gradient(to top,$purple,$pink );
+        background-clip: text;
+        -webkit-background-clip: text;
+		}
+     &:hover {
+            
+        .icon-hover {
+               opacity: 1;
+            }
+        .icon-default {
+        opacity: 0;
+            }
+     }}
+}
