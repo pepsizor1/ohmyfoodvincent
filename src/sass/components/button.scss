@@ -1,21 +1,4 @@
-
-.explore {
-    text-align: center;
-    background-color: $lightgrey;
-    padding-bottom: 4rem;
-     h2{
-    padding-top: 2.4rem;
-    font-size: 1.5rem;
-    margin: 0;
-    }
-     p{
-    font-size: 1rem;
-    font-weight: 300;
-    margin-left: 2rem;
-    margin-right: 2rem;
-    color: $grey-font;
-    }
-     button{
+button{
     font-family: "Roboto";
     margin-top: 1rem;
     color: white;
@@ -29,6 +12,4 @@
             @include big-shadow;
             background-image: linear-gradient(to top,$light-purple,$light-pink ); 
         }
-}
-
 }

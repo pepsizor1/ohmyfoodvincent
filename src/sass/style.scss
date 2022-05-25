@@ -1,12 +1,15 @@
+@import "./utils/animations.scss";
+@import "./utils/heart.scss";
 @import "./utils/color.scss";
 @import "./utils/box-shadow.scss";
 @import "./base.scss";
 @import "./layout/header.scss";
-@import "./layout/city.scss";
-@import "./layout/explorer.scss";
-@import "./layout/tutorial.scss";
-@import "./layout/restaurants.scss";
+@import "./pages/city.scss";
+@import "./pages/explorer.scss";
+@import "./pages/tutorial.scss";
+@import "./pages/restaurants.scss";
 @import "./layout/footer.scss";
 @import "./pages/page-restaurant-main.scss";
+@import "./components/button.scss"
 
 

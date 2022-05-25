@@ -1,0 +1,69 @@
+@mixin heart {
+    .icons {
+		position: relative;
+		width: 0.6rem;
+		height: 1.3rem;
+     i {
+		font-size: 2rem;
+        position: absolute;
+		bottom: 0;
+		right: 0;
+	   	
+    }
+	.icon-default {
+        transition: opacity 1s;
+        color: black;
+		}
+        
+	.icon-hover {
+        transition: opacity 1s;
+        opacity: 0;
+        color: transparent;
+        background-image: linear-gradient(to top,$purple,$pink );
+        background-clip: text;
+        -webkit-background-clip: text;
+		}
+     &:hover {
+            
+        .icon-hover {
+               opacity: 1;
+            }
+        .icon-default {
+        opacity: 0;
+            }
+        }
+	}.icons {
+		position: relative;
+		width: 0.6rem;
+		height: 1.3rem;
+     i {
+		font-size: 2rem;
+        position: absolute;
+		bottom: 0;
+		right: 0;
+	   	
+    }
+	.icon-default {
+        transition: opacity 1s;
+        color: black;
+		}
+        
+	.icon-hover {
+        transition: opacity 1s;
+        opacity: 0;
+        color: transparent;
+        background-image: linear-gradient(to top,$purple,$pink );
+        background-clip: text;
+        -webkit-background-clip: text;
+		}
+     &:hover {
+            
+        .icon-hover {
+               opacity: 1;
+            }
+        .icon-default {
+        opacity: 0;
+            }
+        }
+	}
+}

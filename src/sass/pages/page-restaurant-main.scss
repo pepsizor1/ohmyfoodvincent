@@ -1,9 +1,106 @@
+
+.three-parts{
+    background-color: $lightgrey;
+    display: flex;
+    
+    flex-direction: column;
+    @media (min-width: 768px){
+    flex-direction: row;
+    justify-content: center;;
+    margin-top: -2rem; 
+    gap: 1rem;  
+    h4 {white-space: nowrap;
+        text-overflow: ellipsis;}
+    }
+    @media (min-width: 1100px){
+        margin-left: 10%;
+        margin-right: 10%;
+        }
+    
+    
+}
+header{
+    position: relative;
+    
+    a{
+        position: absolute;
+        left: 0.8rem;
+        top: 0.8rem;
+        text-decoration: none;
+        font-size: 1.6rem;
+        color: black;
+    
+    }
+}
 img{
     max-width: 100%;
     position: relative;
     z-index: 1;
+    @media (min-width: 768px){
+        height: 25rem;
+        width: 100%;
+        object-fit: cover;
+    }
 }
-.main-menu{
+
+
+.order{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 4rem;
+    background-color: $lightgrey;
+    @media (min-width: 1100px){
+        margin-left: 10%;
+        margin-right: 10%;
+        }
+    button{
+        width: 12rem;
+       
+    }
+}
+.menu-first{
+    flex-basis: 30%;
+    z-index: 10;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    gap: 3rem;
+     background-color: $lightgrey;
+     padding-bottom: 3rem;
+     
+     h3{
+        border-bottom: 3px solid $green;
+        margin-right: 80% ;
+        font-weight: 300;
+        padding-bottom: 0.5rem;
+        margin-top: 0rem;
+        margin-left: 1.2rem;
+        @media (min-width: 768px){
+            margin-top: 2rem;
+            margin-right: 0rem;
+        }
+        
+    }
+    
+  
+}
+.main-menu-1{
+    animation: appear 1s;
+    @for $i from 1 through 5{
+        &:nth-child(#{$i}){
+            
+            animation-delay: 100ms * $i;
+            
+        }
+    }
+    animation-fill-mode: both;
+    margin-top: -2rem;
+   
+    
+}
+.banner-menu{
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -11,46 +108,81 @@ img{
     background-color: $lightgrey;
     padding-top: 0.5rem;
     margin-top: -3rem;
-    padding-bottom: 5rem;
+    padding-bottom: 2rem;
     position: relative;
     z-index: 10;
+    @include heart;
     h2{
         font-family: 'Shrikhand', cursive;
         font-weight: 500;
         margin-left: 1rem;
     }
-    .icons {
-		position: relative;
-		width: 0.6rem;
-		height: 1.3rem;
-     i {
-		font-size: 2rem;
-        position: absolute;
-		bottom: 0;
-		right: 0;
-        margin-right: 2rem;
-	   	
+    i{
+    margin-right: 1.5rem;
     }
-	.icon-default {
-        transition: opacity 1s;
-        color: black;
-		}
+    @media (min-width: 1100px){
+        margin-left: 10%;
+        margin-right: 10%;
+        }
+    
+}
+.menu-cards{
+    flex-grow: 10;
+    border-radius: 1rem;
+    margin-right: 1rem;
+    margin-left: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @include base-shadow;
+    
+    
+    background-color: white;
+    overflow: hidden;
+    p{
+        margin-right: 1rem;
+    }
+    .description-pages{
+        margin-left: 1rem;
+        overflow: hidden;
         
-	.icon-hover {
-        transition: opacity 1s;
-        opacity: 0;
-        color: transparent;
-        background-image: linear-gradient(to top,$purple,$pink );
-        background-clip: text;
-        -webkit-background-clip: text;
-		}
-     &:hover {
+        h4{
+            margin-bottom: -0.7rem;
+            margin-top: 0.7rem;
+            font-size: 1.1rem;
+            font-weight: 600;
+            overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        }
+        p{
+            margin-bottom: 0.7rem;
+            overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
             
-        .icon-hover {
-               opacity: 1;
-            }
-        .icon-default {
-        opacity: 0;
-            }
-     }}
+        }
+    }
+    .menu-card__price{
+        display: flex;
+        align-items: center;
+    }
+    .menu-card__check{
+        padding: 1.4rem 1.2rem;
+        background-color: $green;
+        margin-right: -4.3rem;
+        border-radius: 0 1rem 1rem 0;
+        transition: margin-right 0.5s;
+        i{
+            font-size: 1.5rem;
+            color: white;
+        }
+    }
+    &:hover {
+      .menu-card__check { margin-right: 0;}
+      i {
+          animation: spin 0.8s ease;
+      }
+    }
+    
 }
