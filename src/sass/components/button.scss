@@ -8,7 +8,7 @@ button{
     border-radius: 5rem;
     @include base-shadow;
     background-image: linear-gradient(to top,$purple,$pink);
-    
+    cursor:pointer; 
     transition: all 2s;   
     &:hover{
         transform: scale(1.02);   

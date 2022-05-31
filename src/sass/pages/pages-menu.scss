@@ -116,6 +116,10 @@ img{
         font-family: 'Shrikhand', cursive;
         font-weight: 500;
         margin-left: 1rem;
+        @media (min-width: 768px){
+            margin-left: 3rem;
+            }
+
     }
     i{
     margin-right: 1.5rem;
