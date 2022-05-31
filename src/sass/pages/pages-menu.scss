@@ -1,5 +1,5 @@
 
-.three-parts{
+.main-menu{
     background-color: $lightgrey;
     display: flex;
     
@@ -59,7 +59,7 @@ img{
        
     }
 }
-.menu-first{
+.menu-part{
     flex-basis: 30%;
     z-index: 10;
     position: relative;
@@ -86,7 +86,7 @@ img{
     
   
 }
-.main-menu-1{
+.menu-list{
     animation: appear 1s;
     @for $i from 1 through 5{
         &:nth-child(#{$i}){
@@ -142,7 +142,7 @@ img{
     p{
         margin-right: 1rem;
     }
-    .description-pages{
+    .menu-cards__description{
         margin-left: 1rem;
         overflow: hidden;
         

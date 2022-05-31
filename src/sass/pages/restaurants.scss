@@ -78,10 +78,10 @@
     .fa-heart{
         font-size: 4rem;
     }
-    .restaurants-cards--new{
+    .card--new{
         position: relative;
     }
-    .restaurants-cards--new::before{
+    .card--new::before{
         content:"Nouveau";
         border-radius: 0.5rem;
         padding: 0.9rem 0.3rem 0rem 0.3rem;
@@ -95,8 +95,12 @@
          text-align: center;
         right: 1.5rem;
         top: 1rem;
+        z-index: 10;
     }
     @include heart;
+    i{
+        margin-right: 2rem;
+    }
 
 	
 

@@ -8,8 +8,11 @@ button{
     border-radius: 5rem;
     @include base-shadow;
     background-image: linear-gradient(to top,$purple,$pink);
-        &:hover{
-            @include big-shadow;
+    
+    transition: all 2s;   
+    &:hover{
+        transform: scale(1.02);   
+        @include big-shadow;
             background-image: linear-gradient(to top,$light-purple,$light-pink ); 
         }
 }
