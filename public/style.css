@@ -719,7 +719,7 @@ button:hover {
 .loader .lds-roller div:nth-child(3):after {
   top: 71px;
   left: 48px;
-  background: #99E2D0;
+  background-image: linear-gradient(to right, #FF79DA, #99E2D0);
 }
 .loader .lds-roller div:nth-child(4) {
   animation-delay: -0.144s;
@@ -743,7 +743,7 @@ button:hover {
 .loader .lds-roller div:nth-child(6):after {
   top: 68px;
   left: 24px;
-  background: #FF79DA;
+  background-image: linear-gradient(to right, #9356DC, #FF79DA);
 }
 .loader .lds-roller div:nth-child(7) {
   animation-delay: -0.252s;
